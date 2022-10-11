@@ -1,14 +1,10 @@
 import io.github.bonigarcia.wdm.WebDriverManager;
-import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import pages.MainPage;
-
-import java.util.HashMap;
-import java.util.Map;
 
 public class QuestionsTest {
     private static WebDriver driver;
