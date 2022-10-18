@@ -16,18 +16,21 @@ import static org.hamcrest.MatcherAssert.assertThat;
 public class MainPage {
     private final WebDriver driver;
 
-    //Кнопка верхнего заказа
+    //Верхняя кнопка заказа
     private final By topOrderButton = By.className("Button_Button__ra12g");
+
+    //Нижняя кнопка заказа
     private final By botOrderButton = By.xpath("//div[@class='Home_FinishButton__1_cWm']/button");
 
-    //Кнопки вопросов
+    //Кнопки вопросов в аккордионе
     private final By question = By.className("accordion__button");
 
-    //Ответ на конкретный вопрос
+    //Путь до ответа на вопрос относительно элемента вопроса
     private final By answer = By.xpath("./../../div[@data-accordion-component='AccordionItemPanel']");
-    //Список вопросов
+    //Список вопросов в аккордионе
     private final By accordionQuestions = By.xpath("//div[@data-accordion-component='Accordion']");
 
+    //Кнопка принятия куки
     private final By cookieButton = By.id("rcc-confirm-button");
 
     public MainPage(WebDriver driver) {
